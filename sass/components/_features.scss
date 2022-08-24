@@ -1,0 +1,40 @@
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature__title {
+  @include font (14px, 1.71, 0.03em, 700);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature__content {
+  @include font (14px, 1.71, 0.03em);
+  color: var(--additional-text);
+}
+
+.feature__list {
+  display: flex;
+  justify-content: center;
+}
+
+.feature__item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+
+  &+& {
+    margin-left: 30px;
+  }
+}
+
+.feature__fill {
+  @include centeredFlex;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--background-light);
+  margin-bottom: 30px;
+}
+
+
+ 
